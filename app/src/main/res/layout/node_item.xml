@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1px">
+
+    <com.my.dn.widget.CircleTextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton android:id="@+id/img_del"
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/icon_node_del"
+        android:visibility="invisible" />
+
+</RelativeLayout>

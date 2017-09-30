@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DancingNode</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+</resources>
