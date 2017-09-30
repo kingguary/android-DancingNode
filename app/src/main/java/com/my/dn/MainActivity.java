@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.my.dn.data.DiscoveredInfo;
@@ -17,9 +18,9 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mBtnEdit;
-    private TextView mBtnCancel;
-    private TextView mBtnSave;
+    private Button mBtnEdit;
+    private Button mBtnCancel;
+    private Button mBtnSave;
     private ViewGroup mLayoutEdit;
     private DancingPanel mPanel;
 
@@ -44,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mBtnEdit = (TextView) findViewById(R.id.btn_edit);
+        mBtnEdit = (Button) findViewById(R.id.btn_edit);
         mBtnEdit.setOnClickListener(mOnClickListener);
-        mBtnCancel = (TextView) findViewById(R.id.btn_cancel);
+        mBtnCancel = (Button) findViewById(R.id.btn_cancel);
         mBtnCancel.setOnClickListener(mOnClickListener);
-        mBtnSave = (TextView) findViewById(R.id.btn_save);
+        mBtnSave = (Button) findViewById(R.id.btn_save);
         mBtnSave.setOnClickListener(mOnClickListener);
         mLayoutEdit = (ViewGroup) findViewById(R.id.layout_edit);
         constructPanelView();
